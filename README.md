@@ -1,5 +1,3 @@
-# muzak
-
 And so it begins....
 
 This is a set of programs that work with music notes/chords/etc in various ways.
