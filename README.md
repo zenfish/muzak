@@ -48,6 +48,13 @@ BM
 ```
 Since it can read from stdin, you can also do something like -
 ```bash
+# note - the "BM" in the output was sent to stderr... this is for legibility but also permits easier piping
 $ echo  B D# F# | n2c | c2n
+BM         B D# F#
+```
+Or, conversely -
+```bash
+$ echo  C | c2n | n2c
+C          CM
 ```
 
