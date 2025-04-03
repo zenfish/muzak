@@ -23,8 +23,8 @@ Or simply -
 
 ## programs
 
-n2c
-====
+### n2c
+
 c2n - AKA chords-to-notes. Takes a set of chords (from stdin or arguments) and attempts to convert them to notes.
 n2c - AKA notes-to-chords. Takes a set of notes (from stdin or arguments) and attempts to convert them to chords.
 
@@ -39,8 +39,8 @@ Cm
 EbM6
 ```
 
-c2n
-====
+### c2n
+
 c2n - AKA chords-to-notes. Takes a set of chords (from stdin or arguments) and attempts to convert them to notes.
 
 Errors and some surpurfluous data are sent to /dev/stderr, the rest goes to stdout.
