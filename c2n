@@ -1,0 +1,62 @@
+#!/usr/bin/env python3
+
+#
+# try to figure out what notes are in a chord
+#
+# Will read chords from command line or stdin
+#
+# Usage: $0 [chord1 [c2 [c3 [... cN]]]
+#
+
+import argparse
+import sys
+
+from mingus.core.chords import from_shorthand 
+
+# like.. A-4
+DEFAULT_OCTAVE = 4
+
+if len(sys.argv) > 1:
+    chordz = sys.argv[1:]
+else:
+    chordz = sys.stdin.readline().split()
+
+
+#
+# mingus seems to choke on these... and presumably others... but in an attempt to band aid...
+#
+weird_chords = {
+    "E7sus4": "E A D B",
+    "Ebadd9": "Eb G Bb F",
+    "Ebadd9/G": "Eb G Bb F",    # same?
+    "Cm7add4": "C Eb F G Bb",
+    "A7sus4": "A D E G",
+    "C9sus4": "C F G Bb D",
+    "C2": "C D G"       # ?
+}
+
+for chord in chordz:
+
+    if chord in weird_chords:
+        # if TERSE:
+        #     print("%s" % weird_chords[chord])
+        # else:
+        #     print("%-10s %s" % (chord, weird_chords[chord]))
+        sys.stderr.write("%-10s " % chord)
+        sys.stderr.flush()
+        print("%s" % weird_chords[chord])
+
+    else:
+        try:
+            notez = from_shorthand(chord)
+    
+            sys.stderr.write("%-10s " % chord)
+            sys.stderr.flush()
+            print("%s" % " ".join([note for note in notez]))
+    
+        except Exception as e:
+            sys.stderr.write(str(e))
+            sys.stderr.write("... couldn't get notes from chord....\n")
+            sys.exit(2)
+
+

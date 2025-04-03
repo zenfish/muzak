@@ -1,0 +1,79 @@
+#!/usr/bin/env python3
+
+#
+# try to figure out what chord is composed of a collection of notes
+#
+# Will strip out any octave bits... so that C-4/C4 will be replaced with C, for instance
+#
+
+import argparse
+import fileinput
+import re
+import sys
+
+import mingus.core.chords as chords
+
+# like.. A-4
+DEFAULT_OCTAVE = 4
+
+VERBOSE = True
+VERBOSE = False
+
+notez   = []
+
+#
+# use the command line or stdin
+#
+raw_notez = []
+notez     = []
+
+if len(sys.argv) > 1:
+    raw_notez = sys.argv[1:]
+else:
+    raw_notez = sys.stdin.readline().split()
+
+# a few transforms... 
+#
+# - make all the notes start with a capital letter
+# - kill numbers and dashes
+#
+for note in raw_notez:
+    note = note[0].upper() + note[1:]
+    note = re.sub(r'\d+', '', note)
+    note = note.replace("-", "")
+    # notez.append(note[0].upper() + note[1:])
+    notez.append(note)
+
+# print(raw_notez)
+
+try:
+    # print(" ".join(notez))
+
+    if VERBOSE:
+        chordz = chords.determine(notez, shorthand=False)
+    else:
+        chordz = chords.determine(notez, shorthand=True)
+
+    # print("chordz = chords.determine(notez, shorthand=True)")
+    # import pdb
+    # pdb.set_trace()
+
+    if len(chordz) > 0:
+
+        if len(chordz) == 1:
+            print("%s" % (chordz[0]))
+
+        else:
+            sys.stderr.write("...it might be one of...\n")
+            for chord in chordz:
+                print("%s" % (chord))
+
+    else:
+        sys.stderr.write("... couldn't get any chords containing the notes given....")
+        sys.exit(27)
+
+except Exception as e:
+    sys.stderr.write(str(e) + "\n")
+    sys.stderr.write("... couldn't get chord from the notes given....")
+    sys.exit(29)
+
