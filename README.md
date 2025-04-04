@@ -23,8 +23,7 @@ Or simply -
 
 ### n2c
 
-c2n - AKA chords-to-notes. Takes a set of chords (from stdin or arguments) and attempts to convert them to notes.
-n2c - AKA notes-to-chords. Takes a set of notes (from stdin or arguments) and attempts to convert them to chords.
+``n2c`` - AKA notes-to-chords. Takes a set of notes (from stdin or arguments) and attempts to convert them to chords.
 
 Errors and some surpurfluous data are sent to /dev/stderr, the rest goes to stdout.
 
@@ -39,7 +38,7 @@ EbM6
 
 ### c2n
 
-c2n - AKA chords-to-notes. Takes a set of chords (from stdin or arguments) and attempts to convert them to notes.
+``c2n`` - AKA chords-to-notes. Takes a set of chords (from stdin or arguments) and attempts to convert them to notes.
 
 Errors and some surpurfluous data are sent to /dev/stderr, the rest goes to stdout.
 ```bash
@@ -58,15 +57,28 @@ $ echo  C | c2n | n2c
 C          CM
 ```
 
+### xtab.sh
+
+``xtab.sh`` attempts to extract notes from a TAB page.
+
+It's simply a grep that looks for note-looking-things, but it might be useful for ``ripMax`` (see the next tool.)
+
+```bash
+$ cat xtab.sh
+egrep -w -o '[CDEFGAB](b|bb)?(m|maj7|maj|min7|min|sus)?(1|2|3|4|5|6|7|8|9)?(#)?(/[CDEFGAB])?(b|bb)?(m|maj7|maj|min7|min|sus)?(1|2|3|4|5|6|7|8|9)?(#)?' "$1" | tr '\n' ' '
+echo
+```
+
+
 ### ripMax
 
 (Note - this doesn't use stdin/stderr)
 
-ripMax attempts to find the longest sequence of notes that it can find in a set of chords.
+``ripMax`` attempts to find the longest sequence of notes that it can find in a set of chords.
 
 This will be used later when discovering efficient alternate guitar tunings, but I think it's interesting in its own right to see what sections of a song are repeated.
 
-ripMax takes a file as an argument that should have chords separated by whitespace (e.g. spaces, tabs, newlines, etc.)
+``ripMax`` takes a file as an argument that should have chords separated by whitespace (e.g. spaces, tabs, newlines, etc.)
 
 It requires at least 6 in a run (variable "MIN_LENGTH"), and the maximum sequence can't be more than N/2 chords, where N is the number of chords in the file.
 
