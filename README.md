@@ -60,6 +60,8 @@ C          CM
 
 ### ripMax
 
+(Note - this doesn't use stdin/stderr)
+
 ripMax attempts to find the longest sequence of notes that it can find in a set of chords.
 
 This will be used later when discovering efficient alternate guitar tunings, but I think it's interesting in its own right to see what sections of a song are repeated.
