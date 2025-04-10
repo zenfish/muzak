@@ -57,6 +57,31 @@ $ echo  C | c2n | n2c
 C          CM
 ```
 
+### pitch_shift
+
+``pitch_shift.py`` - takes a set of notes/chords (from stdin or arguments) and attempts to shift their pitch
+by +- the pitches specified. Pitch is the first argument. Assumes 4th octave if none explicitly specified.
+
+```bash
+$ pitch_shift.py 2 A
+B-4
+```
+
+```bash
+$ pitch_shift.py 2 A-5
+B-6
+```
+
+```bash
+$ pitch_shift.py -2 D
+C-4
+```
+
+Since it can read from stdin, you can also do something like -
+```bash
+$ pitch_shift.py 3 A B C | pitch_shift.py -3
+A-4 B-4 C-4
+
 ### xtab.sh
 
 ``xtab.sh`` attempts to extract notes from a TAB page.
