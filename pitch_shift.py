@@ -59,6 +59,7 @@ def shifty(name, semitones):
     except Exception as e:
         print(e)
         print("line number: " + str(e.__traceback__.tb_lineno))
+        print(usage)
         sys.exit(4)
 
     # return a string w no quotes
