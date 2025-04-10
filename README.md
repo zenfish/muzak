@@ -81,6 +81,7 @@ Since it can read from stdin, you can also do something like -
 ```bash
 $ pitch_shift.py 3 A B C | pitch_shift.py -3
 A-4 B-4 C-4
+```
 
 ### xtab.sh
 
