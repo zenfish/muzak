@@ -95,6 +95,52 @@ egrep -w -o '[CDEFGAB](b|bb)?(m|maj7|maj|min7|min|sus)?(1|2|3|4|5|6|7|8|9)?(#)?(
 echo
 ```
 
+### juxtachord
+
+```
+jux·ta·pose
+/ˈjəkstəˌpōz,ˌjəkstəˈpōz/
+verb
+place or deal with close together for contrasting effect.
+"black-and-white photos of slums were starkly juxtaposed with color images"
+```
+Simarly, <tt>juxtachord</tt> takes 2 or more chords and lays them out to illustrate their commonalities or differences.
+
+For example -
+
+```bash
+$ juxtachords D7 D
+        C       C#      D       D#      E       F       F#      G       G#      A       A#      B
+
+D7      C               D                               F#                      A
+D                       D                               F#                      A
+```
+
+<img src="d7-d.png" style="zoom:75%;" />
+
+More chords can be added to help see variations notes in a piece of a song, or... here's the beginning
+of the Beatle's Help! song -
+
+```bash
+$ juxtachords Bm Bm/A G G/F# E A A C#m F#m D G A
+        C       C#      D       D#      E       F       F#      G       G#      A       A#      B
+
+Bm                      D                               F#                                      B
+Bm/A                    D                               F#                      A               B
+G                       D                                       G                               B
+G/F#                    D                               F#      G                               B
+E                                       E                               G#                      B
+A               C#                      E                                       A
+A               C#                      E                                       A
+C#m             C#                      E                               G#
+F#m             C#                                      F#                      A
+D                       D                               F#                      A
+G                       D                                       G                               B
+A               C#                      E                                       A
+```
+
+To me it's fun to see variety and commonalities... perhaps someone with music training could easily
+pick out all the sharps and notes, but not me.
 
 ### ripMax
 
