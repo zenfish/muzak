@@ -142,8 +142,6 @@ of the Beatle's Help! song -
     A               C#                      E                                       A
 
 <img src="./help.svg">
-![juxtaimage](./d7-d.svg)
-
 
 To me it's fun to see variety and commonalities... perhaps someone with music training could easily
 pick out all the sharps and notes, but not me.
