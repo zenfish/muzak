@@ -125,8 +125,8 @@ of the Beatle's Help! song -
 $ juxtachords Bm Bm/A G G/F# E A A C#m F#m D G A
         C       C#      D       D#      E       F       F#      G       G#      A       A#      B
 
-#f00[Bm]                      D                               F#                                      B
-#0f0[Bm/A]                    D                               F#                      A               B
+Bm                      D                               F#                                      B
+Bm/A                    D                               F#                      A               B
 G                       D                                       G                               B
 G/F#                    D                               F#      G                               B
 E                                       E                               G#                      B
