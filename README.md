@@ -110,33 +110,15 @@ For example -
 
 ```bash
 $ juxtachords D7 D
-        C       C#      D       D#      E       F       F#      G       G#      A       A#      B
-
-D7      C               D                               F#                      A
-D                       D                               F#                      A
 ```
-
 <img src="d7-d.svg">
 
 More chords can be added to help see variations notes in a piece of a song, or... here's the beginning
 of the Beatle's Help! song -
 
-    $ juxtachords Bm Bm/A G G/F# E A A C#m F#m D G A
-            C       C#      D       D#      E       F       F#      G       G#      A       A#      B
-
-    Bm                      D                               F#                                      B
-    Bm/A                    D                               F#                      A               B
-    G                       D                                       G                               B
-    G/F#                    D                               F#      G                               B
-    E                                       E                               G#                      B
-    A               C#                      E                                       A
-    A               C#                      E                                       A
-    C#m             C#                      E                               G#
-    F#m             C#                                      F#                      A
-    D                       D                               F#                      A
-    G                       D                                       G                               B
-    A               C#                      E                                       A
-
+```bash
+$ juxtachords Bm Bm/A G G/F# E A A C#m F#m D G A
+```
 <img src="help.svg">
 
 To me it's fun to see variety and commonalities... perhaps someone with music training could easily
