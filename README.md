@@ -118,6 +118,10 @@ D                       D                               F#                      
 
 <img src="./d7-d.svg">
 
+![juxtaimage](./d7-d.svg)
+
+
+
 More chords can be added to help see variations notes in a piece of a song, or... here's the beginning
 of the Beatle's Help! song -
 
@@ -138,6 +142,7 @@ of the Beatle's Help! song -
     A               C#                      E                                       A
 
 <img src="./help.svg">
+![juxtaimage](./d7-d.svg)
 
 
 To me it's fun to see variety and commonalities... perhaps someone with music training could easily
