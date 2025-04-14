@@ -123,20 +123,20 @@ of the Beatle's Help! song -
 
 ```bash
 $ juxtachords Bm Bm/A G G/F# E A A C#m F#m D G A
-$${\color{red}Magenta}$$        C       C#      D       D#      E       F       F#      G       G#      A       A#      B
+        C       C#      D       D#      E       F       F#      G       G#      A       A#      B
 
-$${\color{red}Bm}$$                      D                               F#                                      B
-$${\color{red}Bm/A}$$                    D                               F#                      A               B
-$${\color{red}G}$$                       D                                       G                               B
-$${\color{red}G/F#}$$                    D                               F#      G                               B
-$${\color{red}E}$$                                       E                               G#                      B
-$${\color{red}A}$$               C#                      E                                       A
-$${\color{red}A}$$               C#                      E                                       A
-$${\color{red}C#m}$$             C#                      E                               G#
-$${\color{red}F#m}$$             C#                                      F#                      A
-$${\color{red}D}$$                       D                               F#                      A
-$${\color{red}G}$$                       D                                       G                               B
-$${\color{red}A}$$               C#                      E                                       A
+#f00[Bm]                      D                               F#                                      B
+#0f0[Bm/A]                    D                               F#                      A               B
+G                       D                                       G                               B
+G/F#                    D                               F#      G                               B
+E                                       E                               G#                      B
+A               C#                      E                                       A
+A               C#                      E                                       A
+C#m             C#                      E                               G#
+F#m             C#                                      F#                      A
+D                       D                               F#                      A
+G                       D                                       G                               B
+A               C#                      E                                       A
 ```
 
 To me it's fun to see variety and commonalities... perhaps someone with music training could easily
