@@ -121,11 +121,11 @@ D                       D                               F#                      
 More chords can be added to help see variations notes in a piece of a song, or... here's the beginning
 of the Beatle's Help! song -
 
-```bash
+<pre>
 $ juxtachords Bm Bm/A G G/F# E A A C#m F#m D G A
         C       C#      D       D#      E       F       F#      G       G#      A       A#      B
 
-Bm                      D                               F#                                      B
+$${\color{red}BM}$$                      D                               F#                                      B
 Bm/A                    D                               F#                      A               B
 G                       D                                       G                               B
 G/F#                    D                               F#      G                               B
@@ -137,7 +137,7 @@ F#m             C#                                      F#                      
 D                       D                               F#                      A
 G                       D                                       G                               B
 A               C#                      E                                       A
-```
+</pre>
 
 To me it's fun to see variety and commonalities... perhaps someone with music training could easily
 pick out all the sharps and notes, but not me.
@@ -180,7 +180,7 @@ F#m A A6 C#m F#m D G A C#m F#m D G A Bm Bm/A G
 ```
 
 
-$${\color{red}Red}$$    R e d
+    R e d
 $${\color{green}Green}$$    G r e e n
 $${\color{lightgreen}Light \space Green}$$  L i g h t G r e e n
 
