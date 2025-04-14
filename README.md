@@ -121,24 +121,23 @@ D                       D                               F#                      
 More chords can be added to help see variations notes in a piece of a song, or... here's the beginning
 of the Beatle's Help! song -
 
-<pre>
+```bash
 $ juxtachords Bm Bm/A G G/F# E A A C#m F#m D G A
         C       C#      D       D#      E       F       F#      G       G#      A       A#      B
 
-<code style="color:red"">Bm</code>                      D                               F#                                      B
-
-Bm/A                    D                               F#                      A               B
-G                       D                                       G                               B
-G/F#                    D                               F#      G                               B
-E                                       E                               G#                      B
-A               C#                      E                                       A
-A               C#                      E                                       A
-C#m             C#                      E                               G#
-F#m             C#                                      F#                      A
-D                       D                               F#                      A
-G                       D                                       G                               B
-A               C#                      E                                       A
-</pre>
+- Bm                      D                               F#                                      B
+- Bm/A                    D                               F#                      A               B
+- G                       D                                       G                               B
+- G/F#                    D                               F#      G                               B
+- E                                       E                               G#                      B
+- A               C#                      E                                       A
+- A               C#                      E                                       A
+- C#m             C#                      E                               G#
+- F#m             C#                                      F#                      A
+- D                       D                               F#                      A
+- G                       D                                       G                               B
+- A               C#                      E                                       A
+```
 
 To me it's fun to see variety and commonalities... perhaps someone with music training could easily
 pick out all the sharps and notes, but not me.
