@@ -124,7 +124,7 @@ of the Beatle's Help! song -
     $ juxtachords Bm Bm/A G G/F# E A A C#m F#m D G A
             C       C#      D       D#      E       F       F#      G       G#      A       A#      B
 
-    $${\color{red}Bm}$$                      D                               F#                                      B
+    Bm                      D                               F#                                      B
     Bm/A                    D                               F#                      A               B
     G                       D                                       G                               B
     G/F#                    D                               F#      G                               B
@@ -136,6 +136,8 @@ of the Beatle's Help! song -
     D                       D                               F#                      A
     G                       D                                       G                               B
     A               C#                      E                                       A
+
+<img src="help.png" style="zoom:75%;" />
 
 To me it's fun to see variety and commonalities... perhaps someone with music training could easily
 pick out all the sharps and notes, but not me.
