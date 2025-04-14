@@ -161,8 +161,3 @@ F#m A A6 C#m F#m D G A C#m F#m D G A Bm Bm/A G
 ... also writtten to help.max
 ```
 
-
-    R e d
-$${\color{green}Green}$$    G r e e n
-$${\color{lightgreen}Light \space Green}$$  L i g h t G r e e n
-
