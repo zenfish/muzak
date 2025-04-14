@@ -123,20 +123,20 @@ of the Beatle's Help! song -
 
 ```bash
 $ juxtachords Bm Bm/A G G/F# E A A C#m F#m D G A
-        C       C#      D       D#      E       F       F#      G       G#      A       A#      B
+<span style="color:#FF77FF;">C       C#      D       D#      E       F       F#      G       G#      A       A#      B</span>
 
-Bm                      D                               F#                                      B
-Bm/A                    D                               F#                      A               B
-G                       D                                       G                               B
-G/F#                    D                               F#      G                               B
-E                                       E                               G#                      B
-A               C#                      E                                       A
-A               C#                      E                                       A
-C#m             C#                      E                               G#
-F#m             C#                                      F#                      A
-D                       D                               F#                      A
-G                       D                                       G                               B
-A               C#                      E                                       A
+<span style="color:red;">Bm</span>                      D                               F#                                      B
+<span style="color:red;">Bm/A</span>                    D                               F#                      A               B
+<span style="color:red;">G</span>                       D                                       G                               B
+<span style="color:red;">G/F#</span>                    D                               F#      G                               B
+<span style="color:red;">E</span>                                       E                               G#                      B
+<span style="color:red;">A</span>               C#                      E                                       A
+<span style="color:red;">A</span>               C#                      E                                       A
+<span style="color:red;">C#m</span>             C#                      E                               G#
+<span style="color:red;">F#m</span>             C#                                      F#                      A
+<span style="color:red;">D</span>                       D                               F#                      A
+<span style="color:red;">G</span>                       D                                       G                               B
+<span style="color:red;">A</span>               C#                      E                                       A
 ```
 
 To me it's fun to see variety and commonalities... perhaps someone with music training could easily
