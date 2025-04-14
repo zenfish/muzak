@@ -116,7 +116,7 @@ D7      C               D                               F#                      
 D                       D                               F#                      A
 ```
 
-<img src="d7-d.svg" style="zoom:75%;" />
+<img src="d7-d.svg">
 
 More chords can be added to help see variations notes in a piece of a song, or... here's the beginning
 of the Beatle's Help! song -
@@ -137,7 +137,7 @@ of the Beatle's Help! song -
     G                       D                                       G                               B
     A               C#                      E                                       A
 
-<img src="help.svg" style="zoom:75%;" />
+<img src="help.svg">
 
 
 To me it's fun to see variety and commonalities... perhaps someone with music training could easily
