@@ -4,9 +4,9 @@ This is a set of programs that work with music notes/chords/etc in various ways.
 
 An effort is made to make the various programs -
 
-- do one thing
+- do a thing. Not many things.
 - read from stdin or arguments on the command line
-- pipe-able to each other (e.g. foo | bar | baz)
+- pipe-able to each other (e.g. foo | bar | baz)  At least, in theory.
 
 ## Install/requirements
 
@@ -16,7 +16,7 @@ It's fairly reliant on the mingus music package. You can install via -
 ```
 Or simply -
 ```
-    pip3 install mingus==0.6.1
+    pip3 install mingus==0.6.1 colorama==0.4.6
 ```
 
 ## programs
@@ -83,6 +83,28 @@ $ pitch_shift.py 3 A B C | pitch_shift.py -3
 A-4 B-4 C-4
 ```
 
+### intervalz
+
+``intervals.py`` - somewhat similar to the pitch shifter above, this takes a set of pairs made up of notes and intervals. The
+notes are upper/lower case A-G (plus sharps/flats), and the intervals can either be the number of half steps or the shortcuts
+listed below (if you give the program a ``-h`` or ``--help`` argument it'll dump all this out -
+
+```
+    Half Steps   Interval Name                                  Shortcut
+         1       Minor Second                                      m2
+         2       Major Second                                      M2
+         3       Minor Third                                       m3
+         4       Major Third                                       M3
+         5       Perfect Fourth                                    P4
+         6       Tritone/Augmented Fourth/Diminished Fifth     tri/A4/d5
+         7       Perfect Fifth                                     P5
+         8       Minor Sixth                                       m6
+         9       Major Sixth                                       M6
+         10      Minor Seventh                                     m7
+         11      Major Seventh                                     M7
+```
+*** Bug - currently I don't track octaves, need to add... this is to try and save me from calculating perfect fifths for a buncha notes in a row ***
+
 ### xtab.sh
 
 ``xtab.sh`` attempts to extract notes from a TAB page.
@@ -122,12 +144,10 @@ $ juxtachords Bm Bm/A G G/F# E A A C#m F#m D G A
 <img src="help.svg">
 
 To me it's fun to see variety and commonalities... perhaps someone with music training could easily
-pick out all the sharps and notes, but not me.
+pick out all the sharps and notes, but not me. Who knows what notes are shared between D7, C5, and F#?
+Not me, certainly :)
 
 ### ripMax
-
-(Note - this doesn't use stdin/stderr)
-
 ``ripMax`` attempts to find the longest sequence of notes that it can find in a set of chords.
 
 This will be used later when discovering efficient alternate guitar tunings, but I think it's interesting in its own right to see what sections of a song are repeated.
