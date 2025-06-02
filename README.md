@@ -128,18 +128,6 @@ The Minor Third of D is F#
 ```
 Etcetera.
 
-### xtab.sh
-
-``xtab.sh`` attempts to extract notes from a TAB page.
-
-It's simply a grep that looks for note-looking-things, but it might be useful for ``ripMax`` (see the next tool.)
-
-```bash
-$ cat xtab.sh
-egrep -w -o '[CDEFGAB](b|bb)?(m|maj7|maj|min7|min|sus)?(1|2|3|4|5|6|7|8|9)?(#)?(/[CDEFGAB])?(b|bb)?(m|maj7|maj|min7|min|sus)?(1|2|3|4|5|6|7|8|9)?(#)?' "$1" | tr '\n' ' '
-echo
-```
-
 ### juxtachord
 
 ```
@@ -168,8 +156,7 @@ $ juxtachords Bm Bm/A G G/F# E A A C#m F#m D G A
 
 To me it's fun to see variety and commonalities... perhaps someone with music training could easily
 pick out all the sharps and notes, but not me. Who knows what notes are shared between D7, C5, and F#?
-Not me, certainly :)
-
+Not me, certainly!
 
 ### chords2png.sh
 
@@ -192,6 +179,18 @@ You can view this with any image viewer (those using `iterm2` can use the awesom
 <br />
 <br />
 <img src="c7d6.png">
+
+### xtab.sh
+
+``xtab.sh`` attempts to extract notes from a TAB page.
+
+It's simply a grep that looks for note-looking-things, but it might be useful for ``ripMax`` (see the next tool.)
+
+```bash
+$ cat xtab.sh
+egrep -w -o '[CDEFGAB](b|bb)?(m|maj7|maj|min7|min|sus)?(1|2|3|4|5|6|7|8|9)?(#)?(/[CDEFGAB])?(b|bb)?(m|maj7|maj|min7|min|sus)?(1|2|3|4|5|6|7|8|9)?(#)?' "$1" | tr '\n' ' '
+echo
+```
 
 ### ripMax
 ``ripMax`` attempts to find the longest sequence of notes that it can find in a set of chords.
