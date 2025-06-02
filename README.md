@@ -190,6 +190,67 @@ You can view this with any image viewer (those using `iterm2` can use the awesom
 <br />
 <img src="c7d6.png">
 
+
+### play_chords.py
+
+(Requires fluidsynth, a software based synthesizer.)
+
+Command line tool that plays a stream* of notes in the order given.
+
+* literally implemented as a music21 stream.
+
+```bash
+# play a C7 chord followed by a D minor chord
+./play_chords.py bpm=160 C7 Dm
+```
+
+Many options, some below. Note - this was never meant to be anything approaching the full expressiveness of music, it's
+a very simple thing that'll play a few chords or notes in a row. I find it useful when I see someone talking about
+a handful of notes in a row and I want to hear what they sound like, such as -
+
+    C7 B5 Db
+
+Command line behavior - if it sees....
+
+    The letters A-G, that's a chord. If prepended with an underscore, play a note, else play a chord. Can have a wide variety of suffixes, such as:
+
+            C7
+            Db#
+            Fm6
+
+    Many, many more - check out <a href="chords.md">chords.md</a>
+
+    This uses music21's "harmony.ChordSymbol" function to try and recognize the chord in question. More can
+    be found at -
+
+        https://www.music21.org/music21docs/moduleReference/moduleHarmony.html
+        https://www.music21.org/music21docs/moduleReference/moduleChord.html#music21.chord.Chord
+
+    I added the "X" character, which signifies a rest. 
+
+    In addition, if you add a period (".") followed by a fraction or a recognized spelling of the same, it'll try to play that - e.g.
+
+        C.1/2       half note
+        C.1/8       eighth note
+        C.quarter   quarter note
+        X.1         whole rest
+
+        etc.
+
+    Also (be sure to put these before notes that you want impacted by them!) -
+
+        bpm=X - set the BPM to the value (only impacts notes after this is set! Default is 120bpm.)
+
+        ts=A/B - set the time signature to whatever.
+
+        clef=foo - set the clef to... treble, bass, whatever.
+
+
+    If you modify the code (e.g. set "PRINT_SCORE=True" - I know, I know, I need a flag) and you have 
+    <a href="https://musescore.com/">MusicScore</a> installed, music21 tries to funnel the notes you specified into
+    MusicScore's UI.
+
+
 ### xtab.sh
 
 ``xtab.sh`` attempts to extract notes from a TAB page.
