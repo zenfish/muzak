@@ -20,7 +20,7 @@ Heavily relies on Python and the [mingus](https://github.com/bspaans/python-ming
 
 ### Install/requirements
 
-It's fairly reliant on the mingus music package. You can install via -
+You can install the basic requirements via -
 ```
     pip3 install -r requirements.txt
 ```
@@ -28,15 +28,15 @@ Or simply -
 ```
     pip3 install mingus==0.6.1 colorama==0.4.6 music21==9.7.0
 ```
-Most don't require it, but for `chords2png.sh`, to create PNGs, you'll really want to have homebrew (a package manager that makes everything much easier) - if you don't have it, try:
+Some programs require lilipond, imagemagick, and fluidsynth; on a mac the easiest way to get this installed is via homebrew (a package manager that makes everything much easier) - if you don't have it, try:
 ```
 ruby -e "$(curl -fsSL https://raw.github.com/mxcl/homebrew/go/install)"
 ```
-Then you can install lilipond and imagemagick by simply -
+Then you can install lilipond, imagemagick, and fluidsynth by simply -
 ```
-homebrew install lilypond imagemagick
+homebrew install lilypond imagemagick fluidsynth
 ```
-(Or you can go to https://lilypond.org/ and https://imagemagick.org/ and install from their home sites.)
+(Or you can go to https://lilypond.org/, https://imagemagick.org/, and https://github.com/FluidSynth/fluidsynth/wiki/Download, and install from their respective sites.)
 
 ## programs
 
