@@ -175,6 +175,7 @@ rendered image is in:
     c7 d6.png
 ```
 You can view this with any image viewer (those using `iterm2` can use the awesome `imgcat` to do in-line terminal viewing.)
+<p>
 ![c7 and d6 chords](c7d6.png)
 
 ### ripMax
