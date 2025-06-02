@@ -175,8 +175,7 @@ rendered image is in:
     c7 d6.png
 ```
 You can view this with any image viewer (those using `iterm2` can use the awesome `imgcat` to do in-line terminal viewing.)
-<img src="d7 d6.png">
-
+[guitar chords]("c7 d6.png")
 
 ### ripMax
 ``ripMax`` attempts to find the longest sequence of notes that it can find in a set of chords.
