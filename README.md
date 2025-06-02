@@ -176,6 +176,7 @@ rendered image is in:
 ```
 You can view this with any image viewer (those using `iterm2` can use the awesome `imgcat` to do in-line terminal viewing.)
 <br />
+<br />
 <img src="c7d6.png">
 
 ### ripMax
