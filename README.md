@@ -16,8 +16,17 @@ It's fairly reliant on the mingus music package. You can install via -
 ```
 Or simply -
 ```
-    pip3 install mingus==0.6.1 colorama==0.4.6
+    pip3 install mingus==0.6.1 colorama==0.4.6 music21==9.7.0
 ```
+Most don't require it, but for `chords2png.sh`, to create PNGs, you'll really want to have homebrew (a package manager that makes everything much easier) - if you don't have it, try:
+```
+ruby -e "$(curl -fsSL https://raw.github.com/mxcl/homebrew/go/install)"
+```
+Then you can install lilipond and imagemagick by simply -
+```
+homebrew install lilypond imagemagick
+```
+(Or you can go to https://lilypond.org/ and https://imagemagick.org/ and install from their home sites.)
 
 ## programs
 
@@ -146,6 +155,35 @@ $ juxtachords Bm Bm/A G G/F# E A A C#m F#m D G A
 To me it's fun to see variety and commonalities... perhaps someone with music training could easily
 pick out all the sharps and notes, but not me. Who knows what notes are shared between D7, C5, and F#?
 Not me, certainly :)
+
+
+### chords2png.sh
+
+``chords2png.sh`` creates little PNGs image files of guitar chord fingering.
+```bash
+$ chords2png c
+rendered image is in:
+
+    c.png
+
+```
+```bash
+$ chords2png c
+rendered image is in:
+
+    c.png
+
+```
+Multiple chords may be created, just space-separate them -
+```bash
+./chords2png.sh c7 d6
+rendered image is in:
+
+    c7 d6.png
+```
+You can view this with any image viewer (those using `iterm2` can use the awesome `imgcat` to do in-line terminal viewing.)
+<img src="d7-d.svg">
+
 
 ### ripMax
 ``ripMax`` attempts to find the longest sequence of notes that it can find in a set of chords.
