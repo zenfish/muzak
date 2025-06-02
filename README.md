@@ -94,9 +94,10 @@ A-4 B-4 C-4
 
 ### intervalz
 
-``intervals.py`` - somewhat similar to the pitch shifter above, this takes a set of pairs made up of notes and intervals. The
-notes are upper/lower case A-G (plus sharps/flats), and the intervals can either be the number of half steps or the shortcuts
-listed below (if you give the program a ``-h`` or ``--help`` argument it'll dump all this out -
+``intervals.py`` - in some sense similar to the pitch shifter above, this takes a *set of pairs* made up of notes and intervals, and
+outputs whatever the results are, one per line. The notes are upper/lower case A-G (plus sharps/flats), and the
+intervals can either be the number of half steps or the shortcuts listed below (if you give the program a ``-h`` or
+``--help`` argument it'll dump all this out -
 
 ```
     Half Steps   Interval Name                                  Shortcut
@@ -113,6 +114,19 @@ listed below (if you give the program a ``-h`` or ``--help`` argument it'll dump
          11      Major Seventh                                     M7
 ```
 *** Bug - currently I don't track octaves, need to add... this is to try and save me from calculating perfect fifths for a buncha notes in a row ***
+
+So you might do -
+```bash
+./intervalz.py C P4
+The Perfect Fourth of C is F
+```
+or -
+```bash
+./intervalz.py C m6 D m3
+The Minor Sixth of C is A
+The Minor Third of D is F#
+```
+Etcetera.
 
 ### xtab.sh
 

@@ -187,7 +187,7 @@ for n in range(0, olen, 2):
         try:
             shortcut = n_to_shortcut[shortcut]
         except:
-            print(f"something suss about {shortcut}, skipping....")
+            print(f"don't understand {shortcut}, skipping....")
             continue
 
     # print(f"TOK: {token}")
