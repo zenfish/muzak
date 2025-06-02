@@ -28,7 +28,7 @@ cat > $tmp <<_EOF_
 \version "2.24.4"
 \include "predefined-guitar-fretboards.ly"
 \new FretBoards {
-  \override FretBoards.FretBoard.size = 4.0
+  \override FretBoards.FretBoard.size = 2.0
   \chordmode {
     $notez
   }
