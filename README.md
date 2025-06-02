@@ -167,13 +167,6 @@ rendered image is in:
     c.png
 
 ```
-```bash
-$ chords2png c
-rendered image is in:
-
-    c.png
-
-```
 Multiple chords may be created, just space-separate them -
 ```bash
 ./chords2png.sh c7 d6
@@ -182,7 +175,7 @@ rendered image is in:
     c7 d6.png
 ```
 You can view this with any image viewer (those using `iterm2` can use the awesome `imgcat` to do in-line terminal viewing.)
-<img src="d7-d.svg">
+<img src="d7 d6.png">
 
 
 ### ripMax
