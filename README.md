@@ -1,6 +1,7 @@
 And so it begins....
 
-This is a set of programs that work with music notes/chords/etc in various ways.
+This is a set of programs, almost all terminal/command line/text based, that work with (currently Western/English music
+using the 12-note scale, etc.) music notes/chords/etc in various ways.
 
 An effort is made to make the various programs -
 
@@ -8,7 +9,16 @@ An effort is made to make the various programs -
 - read from stdin or arguments on the command line
 - pipe-able to each other (e.g. foo | bar | baz)  At least, in theory.
 
-## Install/requirements
+Included are text based chord-to-note, note-to-chord, pitch shifting, intervals, juxtaposing chords, finding the longest
+repeating run of chords in a song, etc.  Also has a little utility to create guitar fingering PNGs from chords.
+
+Mostly written for myself while learning guitar (next to buying new gear, writing programs about music has to rank up
+there in the grand scheme of avoiding actual learning) to help learn some of the really crazy things I'd memorize if I 
+went to music school. But I was asked by a few friends to put it out, so... ignore, use, or whatever as you will.
+
+Heavily relies on Python and the [mingus](https://github.com/bspaans/python-mingus) and [music21](https://github.com/cuthbertLab/music21) libraries.
+
+### Install/requirements
 
 It's fairly reliant on the mingus music package. You can install via -
 ```
