@@ -217,7 +217,7 @@ Command line behavior - if it sees....
             Db#
             Fm6
 
-    Many, many more - check out [chords.md](chords.md).
+    Many, many more - check out [chords.md](./chords.md).
 
     This uses music21's "harmony.ChordSymbol" function to try and recognize the chord in question. More can
     be found at -
