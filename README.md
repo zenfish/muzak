@@ -1,16 +1,15 @@
-And so it begins....
-
-This is a set of programs, almost all terminal/command line/text based, that work with (currently Western/English music
-using the 12-note scale, etc.) music notes/chords/etc in various ways.
+A small collection of programs, almost all terminal/command line/text based, that work with 
+music notes/chords/etc (currently Western/English music using the 12-note scale, etc.) in various ways.
 
 An effort is made to make the various programs -
 
-- do a thing. Not many things.
+- do one thing. Not many things.
 - read from stdin or arguments on the command line
 - pipe-able to each other (e.g. foo | bar | baz)  At least, in theory.
 
 Included are text based chord-to-note, note-to-chord, pitch shifting, intervals, juxtaposing chords, finding the longest
-repeating run of chords in a song, etc.  Also has a little utility to create guitar fingering PNGs from chords.
+repeating run of chords in a song, etc.  Also has a little utility to create guitar fingering PNGs from chords and a simple
+chord/music player.
 
 Mostly written for myself while learning guitar (next to buying new gear, writing programs about music has to rank up
 there in the grand scheme of avoiding actual learning) to help learn some of the really crazy things I'd memorize if I 
