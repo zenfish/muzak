@@ -212,7 +212,7 @@ Many options, some below. Note - this was never meant to be anything approaching
 a very simple thing that'll play a few chords or notes in a row. I find it useful when I see someone talking about
 a handful of notes in a row and I want to hear what they sound like, such as -
 
-    C7 B5 Db
+    C7 B5 D#
 
 Command line behavior - if it sees (and many more types of chords - check out [chords.md](chords.md)) -
 
