@@ -15,7 +15,9 @@ Mostly written for myself while learning guitar (next to buying new gear, writin
 there in the grand scheme of avoiding actual learning) to help learn some of the really crazy things I'd memorize if I 
 went to music school. But I was asked by a few friends to put it out, so... ignore, use, or whatever as you will.
 
-Heavily relies on Python and the [mingus](https://github.com/bspaans/python-mingus) and [music21](https://github.com/cuthbertLab/music21) libraries.
+Heavily relies on Python and the [mingus](https://github.com/bspaans/python-mingus) and
+[music21](https://github.com/cuthbertLab/music21) libraries (started with the former, but while I love the approach it
+seems rather dead, and music21 - while a bit opaque at times - is more impressive and growing.)
 
 ### Install/requirements
 
@@ -270,8 +272,6 @@ This will be used later when discovering efficient alternate guitar tunings, but
 
 It requires at least 6 in a run (variable "MIN_LENGTH"), and the maximum sequence can't be more than N/2 chords, where N is the number of chords in the file.
 
-It will write the final results in a file with the same filename plus the suffix ".max".
-
 Here's an example run for a popular song -
 ```bash
 # purportedly the chords to the Beatle's song "Help!"
@@ -291,7 +291,5 @@ Bm Bm/A G G/F# E A A C#m F#m D G A C#m F#m D G A Bm Bm/A G G/F# E A
 
 Bm Bm/A G G/F# E A A C#m F#m D G A C#m F#m D G A Bm Bm/A G G/F# E A
 F#m A A6 C#m F#m D G A C#m F#m D G A Bm Bm/A G
-
-... also writtten to help.max
 ```
 

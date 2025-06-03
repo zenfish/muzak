@@ -263,8 +263,8 @@ final_string = (os.linesep.join([s.strip() for s in final_chords.splitlines() if
 
 print(final_string)
 
-print("\n... also writtten to %s" % chord_file + ".max")
+# print("\n... also writtten to %s" % chord_file + ".max")
 
-with open(chord_file + ".max", "wt") as f:
-    f.write(final_string + "\n")
+# with open(chord_file + ".max", "wt") as f:
+#     f.write(final_string + "\n")
 
