@@ -219,7 +219,7 @@ Command line behavior - if it sees (and many more types of chords - check out [c
     The letters A-G, that's a chord. If prepended with an underscore, play a note, else play a chord. Can have a wide variety of suffixes, such as:
 
             C7
-            Db#
+            D#
             Fm6
 
 
