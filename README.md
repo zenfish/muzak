@@ -156,7 +156,7 @@ Simarly, <tt>juxtachord</tt> takes 2 or more chords and lays them out to illustr
 For example -
 
 ```bash
-$ juxtachords D7 D
+$ juxtachords.py D7 D
 ```
 <img src="d7-d.svg">
 
@@ -164,7 +164,7 @@ More chords can be added to help see variations notes in a piece of a song, or..
 of the Beatle's Help! song -
 
 ```bash
-$ juxtachords Bm Bm/A G G/F# E A A C#m F#m D G A
+$ juxtachords.py Bm Bm/A G G/F# E A A C#m F#m D G A
 ```
 <img src="help.svg">
 
