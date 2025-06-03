@@ -217,7 +217,7 @@ Command line behavior - if it sees....
             Db#
             Fm6
 
-    Many, many more - check out <a href="chords.md">chords.md</a>
+    Many, many more - check out [chords.md](chords.md).
 
     This uses music21's "harmony.ChordSymbol" function to try and recognize the chord in question. More can
     be found at -
@@ -246,7 +246,7 @@ Command line behavior - if it sees....
 
 
     If you modify the code (e.g. set "PRINT_SCORE=True" - I know, I know, I need a flag) and you have 
-    <a href="https://musescore.com/">MusicScore</a> installed, music21 tries to funnel the notes you specified into
+    [MusicScore](https://musescore.com/) installed, music21 tries to funnel the notes you specified into
     MusicScore's UI.
 
 
