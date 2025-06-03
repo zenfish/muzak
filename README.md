@@ -1,5 +1,6 @@
 A small collection of programs, almost all terminal/command line/text based, that work with 
 music notes/chords/etc (currently Western/English music using the 12-note scale, etc.) in various ways.
+Tested/works on an M1 mac, at least, should mostly work with other OSs, but YMMV.
 
 An effort is made to make the various programs -
 
