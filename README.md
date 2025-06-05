@@ -92,7 +92,7 @@ B-4
 
 ```bash
 $ pitch_shift.py 2 A-5
-B-6
+B-5
 ```
 
 ```bash
